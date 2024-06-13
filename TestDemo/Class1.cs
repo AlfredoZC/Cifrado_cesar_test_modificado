@@ -6,12 +6,12 @@ public static class Algorithm
 
     string mensajeOriginal = input;
 
-    char[] characters = new char[27] {'A', 'B', 'C', 'D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    char[] characters = new char[36] {'A', 'B', 'C', 'D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z', '1', '2', '3','4','5','6','7','8','9'};
 
     int result = 0;
     string newString =""; //Nuestro mensaje cifrado se guardara aqui
 
-for(int i = 0; i < mensajeOriginal.Length; ++i){  //Iteramos en el mensaje original
+    for(int i = 0; i < mensajeOriginal.Length; ++i){  //Iteramos en el mensaje original
 
     for(int j = 0; j < characters.Length; ++j){ //Iteramos en los elementos del ABC
         char checker = mensajeOriginal[i];
@@ -35,7 +35,7 @@ for(int i = 0; i < mensajeOriginal.Length; ++i){  //Iteramos en el mensaje origi
 
     public static string descifrado(string input, int t){
 
-        char[] characters = new char[27] { 'A', 'B', 'C', 'D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+   char[] characters = new char[36] {'A', 'B', 'C', 'D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z', '1', '2', '3','4','5','6','7','8','9'};
         string cifrada = input; //nuestra palabra a cifrada a decifrar
         string descifrado = ""; //Aqui guardaremos nuestra palabra decifrada
         int result = 0;
